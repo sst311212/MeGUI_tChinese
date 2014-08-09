@@ -60,9 +60,9 @@
             this.analysisPercentLabel.AutoSize = true;
             this.analysisPercentLabel.Location = new System.Drawing.Point(12, 11);
             this.analysisPercentLabel.Name = "analysisPercentLabel";
-            this.analysisPercentLabel.Size = new System.Drawing.Size(90, 13);
+            this.analysisPercentLabel.Size = new System.Drawing.Size(71, 13);
             this.analysisPercentLabel.TabIndex = 0;
-            this.analysisPercentLabel.Text = "Analysis Percent:";
+            this.analysisPercentLabel.Text = "分析百分比:";
             // 
             // analysisPercent
             // 
@@ -86,9 +86,9 @@
             this.minAnalyseSectionsLabel.AutoSize = true;
             this.minAnalyseSectionsLabel.Location = new System.Drawing.Point(12, 37);
             this.minAnalyseSectionsLabel.Name = "minAnalyseSectionsLabel";
-            this.minAnalyseSectionsLabel.Size = new System.Drawing.Size(134, 13);
+            this.minAnalyseSectionsLabel.Size = new System.Drawing.Size(79, 13);
             this.minAnalyseSectionsLabel.TabIndex = 0;
-            this.minAnalyseSectionsLabel.Text = "Minimum analysis sections:";
+            this.minAnalyseSectionsLabel.Text = "最小分析區塊";
             // 
             // minAnalyseSections
             // 
@@ -117,9 +117,9 @@
             this.hybridThresholdLabel.AutoSize = true;
             this.hybridThresholdLabel.Location = new System.Drawing.Point(12, 63);
             this.hybridThresholdLabel.Name = "hybridThresholdLabel";
-            this.hybridThresholdLabel.Size = new System.Drawing.Size(114, 13);
+            this.hybridThresholdLabel.Size = new System.Drawing.Size(81, 13);
             this.hybridThresholdLabel.TabIndex = 0;
-            this.hybridThresholdLabel.Text = "Hybrid Threshold (%):";
+            this.hybridThresholdLabel.Text = "混合限制 (%):";
             // 
             // hybridThreshold
             // 
@@ -143,9 +143,9 @@
             this.hybridFOThresholdLabel.AutoSize = true;
             this.hybridFOThresholdLabel.Location = new System.Drawing.Point(12, 89);
             this.hybridFOThresholdLabel.Name = "hybridFOThresholdLabel";
-            this.hybridFOThresholdLabel.Size = new System.Drawing.Size(170, 13);
+            this.hybridFOThresholdLabel.Size = new System.Drawing.Size(117, 13);
             this.hybridFOThresholdLabel.TabIndex = 0;
-            this.hybridFOThresholdLabel.Text = "Hybrid Field Order Threshold (%):";
+            this.hybridFOThresholdLabel.Text = "混合場順序限制 (%):";
             // 
             // hybridFOThreshold
             // 
@@ -169,9 +169,9 @@
             this.portionThresholdLabel.AutoSize = true;
             this.portionThresholdLabel.Location = new System.Drawing.Point(12, 161);
             this.portionThresholdLabel.Name = "portionThresholdLabel";
-            this.portionThresholdLabel.Size = new System.Drawing.Size(95, 13);
+            this.portionThresholdLabel.Size = new System.Drawing.Size(59, 13);
             this.portionThresholdLabel.TabIndex = 0;
-            this.portionThresholdLabel.Text = "Portion Threshold:";
+            this.portionThresholdLabel.Text = "部分限制:";
             // 
             // portionThreshold
             // 
@@ -197,9 +197,9 @@
             this.maximumPortionsLabel.AutoSize = true;
             this.maximumPortionsLabel.Location = new System.Drawing.Point(12, 187);
             this.maximumPortionsLabel.Name = "maximumPortionsLabel";
-            this.maximumPortionsLabel.Size = new System.Drawing.Size(150, 13);
+            this.maximumPortionsLabel.Size = new System.Drawing.Size(83, 13);
             this.maximumPortionsLabel.TabIndex = 0;
-            this.maximumPortionsLabel.Text = "Maximum Number of Portions:";
+            this.maximumPortionsLabel.Text = "最大部分數量:";
             // 
             // maximumPortions
             // 
@@ -224,9 +224,9 @@
             this.portionsAllowed.AutoSize = true;
             this.portionsAllowed.Location = new System.Drawing.Point(15, 136);
             this.portionsAllowed.Name = "portionsAllowed";
-            this.portionsAllowed.Size = new System.Drawing.Size(105, 17);
+            this.portionsAllowed.Size = new System.Drawing.Size(74, 17);
             this.portionsAllowed.TabIndex = 2;
-            this.portionsAllowed.Text = "Portions Allowed";
+            this.portionsAllowed.Text = "部分允許";
             this.portionsAllowed.UseVisualStyleBackColor = true;
             this.portionsAllowed.CheckedChanged += new System.EventHandler(this.portionsAllowed_CheckedChanged);
             // 
@@ -238,7 +238,7 @@
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(69, 24);
             this.saveButton.TabIndex = 3;
-            this.saveButton.Text = "Save";
+            this.saveButton.Text = "儲存";
             this.saveButton.UseVisualStyleBackColor = true;
             // 
             // cancelButton
@@ -249,18 +249,18 @@
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(69, 24);
             this.cancelButton.TabIndex = 3;
-            this.cancelButton.Text = "Cancel";
+            this.cancelButton.Text = "取消";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
             // priority
             // 
             this.priority.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.priority.Items.AddRange(new object[] {
-            "Lowest",
-            "Below Normal",
-            "Normal",
-            "Above Normal",
-            "Highest"});
+            "最低",
+            "低於正常",
+            "正常",
+            "高於正常",
+            "最高"});
             this.priority.Location = new System.Drawing.Point(213, 111);
             this.priority.Name = "priority";
             this.priority.Size = new System.Drawing.Size(120, 21);
@@ -272,7 +272,7 @@
             this.priorityLabel.Name = "priorityLabel";
             this.priorityLabel.Size = new System.Drawing.Size(88, 23);
             this.priorityLabel.TabIndex = 14;
-            this.priorityLabel.Text = "Process Priority";
+            this.priorityLabel.Text = "處理優先度";
             this.priorityLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // helpButton1
@@ -284,7 +284,7 @@
             this.helpButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.helpButton1.Location = new System.Drawing.Point(15, 212);
             this.helpButton1.Name = "helpButton1";
-            this.helpButton1.Size = new System.Drawing.Size(38, 23);
+            this.helpButton1.Size = new System.Drawing.Size(56, 23);
             this.helpButton1.TabIndex = 16;
             // 
             // SourceDetectorConfigWindow
@@ -317,7 +317,8 @@
             this.MinimizeBox = false;
             this.Name = "SourceDetectorConfigWindow";
             this.ShowInTaskbar = false;
-            this.Text = "MeGUI - Source Detector Configuration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "MeGUI - 來源檢測設定";
             ((System.ComponentModel.ISupportInitialize)(this.analysisPercent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minAnalyseSections)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hybridThreshold)).EndInit();

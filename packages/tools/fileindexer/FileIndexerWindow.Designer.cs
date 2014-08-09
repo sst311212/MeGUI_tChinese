@@ -49,6 +49,7 @@ namespace MeGUI
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FileIndexerWindow));
             this.gbInput = new System.Windows.Forms.GroupBox();
+            this.input = new MeGUI.FileBar();
             this.inputLabel = new System.Windows.Forms.Label();
             this.queueButton = new System.Windows.Forms.Button();
             this.loadOnComplete = new System.Windows.Forms.CheckBox();
@@ -80,7 +81,6 @@ namespace MeGUI
             this.lblCodec = new System.Windows.Forms.Label();
             this.lblContainer = new System.Windows.Forms.Label();
             this.helpButton1 = new MeGUI.core.gui.HelpButton();
-            this.input = new MeGUI.FileBar();
             this.gbInput.SuspendLayout();
             this.gbAudio.SuspendLayout();
             this.gbOutput.SuspendLayout();
@@ -98,6 +98,24 @@ namespace MeGUI
             this.gbInput.TabIndex = 0;
             this.gbInput.TabStop = false;
             this.gbInput.Text = " 輸入 ";
+            // 
+            // input
+            // 
+            this.input.AllowDrop = true;
+            this.input.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.input.Filename = "";
+            this.input.Filter = "";
+            this.input.FilterIndex = 0;
+            this.input.FolderMode = false;
+            this.input.Location = new System.Drawing.Point(77, 10);
+            this.input.Name = "input";
+            this.input.ReadOnly = true;
+            this.input.SaveMode = false;
+            this.input.Size = new System.Drawing.Size(354, 34);
+            this.input.TabIndex = 4;
+            this.input.Title = null;
+            this.input.FileSelected += new MeGUI.FileBarEventHandler(this.input_FileSelected);
             // 
             // inputLabel
             // 
@@ -416,26 +434,8 @@ namespace MeGUI
             this.helpButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.helpButton1.Location = new System.Drawing.Point(13, 394);
             this.helpButton1.Name = "helpButton1";
-            this.helpButton1.Size = new System.Drawing.Size(38, 23);
+            this.helpButton1.Size = new System.Drawing.Size(56, 23);
             this.helpButton1.TabIndex = 14;
-            // 
-            // input
-            // 
-            this.input.AllowDrop = true;
-            this.input.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.input.Filename = "";
-            this.input.Filter = "";
-            this.input.FilterIndex = 0;
-            this.input.FolderMode = false;
-            this.input.Location = new System.Drawing.Point(77, 10);
-            this.input.Name = "input";
-            this.input.ReadOnly = true;
-            this.input.SaveMode = false;
-            this.input.Size = new System.Drawing.Size(354, 34);
-            this.input.TabIndex = 4;
-            this.input.Title = null;
-            this.input.FileSelected += new MeGUI.FileBarEventHandler(this.input_FileSelected);
             // 
             // FileIndexerWindow
             // 
@@ -456,7 +456,7 @@ namespace MeGUI
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FileIndexerWindow";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MeGUI - 檔案索引";
             this.gbInput.ResumeLayout(false);
             this.gbAudio.ResumeLayout(false);

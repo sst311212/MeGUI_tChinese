@@ -95,7 +95,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NumberChooser";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "選擇數字";
             this.Shown += new System.EventHandler(this.NumberChooser_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

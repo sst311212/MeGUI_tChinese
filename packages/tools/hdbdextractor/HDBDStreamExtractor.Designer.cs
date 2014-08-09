@@ -48,8 +48,8 @@ namespace MeGUI.packages.tools.hdbdextractor
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HdBdStreamExtractor));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HdBdStreamExtractor));
             this.FolderInputTextBox = new System.Windows.Forms.TextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.HelpButton2 = new System.Windows.Forms.Button();
@@ -61,17 +61,14 @@ namespace MeGUI.packages.tools.hdbdextractor
             this.FolderInputSourceButton = new System.Windows.Forms.Button();
             this.Eac3toLinkLabel = new System.Windows.Forms.LinkLabel();
             this.FeatureGroupBox = new System.Windows.Forms.GroupBox();
+            this.FeatureDataGridView = new MeGUI.packages.tools.hdbdextractor.CustomDataGridView();
+            this.FeatureNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FeatureNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FeatureDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FeatureFileDataGridViewComboBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.FeatureDurationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FeatureBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.StreamGroupBox = new System.Windows.Forms.GroupBox();
-            this.OutputGroupBox = new System.Windows.Forms.GroupBox();
-            this.FolderOutputSourceButton = new System.Windows.Forms.Button();
-            this.FolderOutputTextBox = new System.Windows.Forms.TextBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.FeatureButton = new System.Windows.Forms.Button();
-            this.extractTypesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.closeOnQueue = new System.Windows.Forms.CheckBox();
-            this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ToolStripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
-            this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.StreamDataGridView = new MeGUI.packages.tools.hdbdextractor.CustomDataGridView();
             this.StreamExtractCheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.StreamNumberTextBox = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,23 +81,26 @@ namespace MeGUI.packages.tools.hdbdextractor
             this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.languageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StreamsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.FeatureDataGridView = new MeGUI.packages.tools.hdbdextractor.CustomDataGridView();
-            this.FeatureNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FeatureNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FeatureDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FeatureFileDataGridViewComboBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.FeatureDurationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FeatureBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.OutputGroupBox = new System.Windows.Forms.GroupBox();
+            this.FolderOutputSourceButton = new System.Windows.Forms.Button();
+            this.FolderOutputTextBox = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.FeatureButton = new System.Windows.Forms.Button();
+            this.extractTypesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.closeOnQueue = new System.Windows.Forms.CheckBox();
+            this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ToolStripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
+            this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.InputGroupBox.SuspendLayout();
             this.FeatureGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FeatureDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FeatureBindingSource)).BeginInit();
             this.StreamGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StreamDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StreamsBindingSource)).BeginInit();
             this.OutputGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.extractTypesBindingSource)).BeginInit();
             this.StatusStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StreamDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StreamsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FeatureDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FeatureBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // FolderInputTextBox
@@ -223,6 +223,94 @@ namespace MeGUI.packages.tools.hdbdextractor
             this.FeatureGroupBox.TabStop = false;
             this.FeatureGroupBox.Text = "檔案內容";
             // 
+            // FeatureDataGridView
+            // 
+            this.FeatureDataGridView.AllowUserToAddRows = false;
+            this.FeatureDataGridView.AllowUserToDeleteRows = false;
+            this.FeatureDataGridView.AllowUserToResizeColumns = false;
+            this.FeatureDataGridView.AllowUserToResizeRows = false;
+            this.FeatureDataGridView.AutoGenerateColumns = false;
+            this.FeatureDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.FeatureDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.FeatureDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FeatureNumberDataGridViewTextBoxColumn1,
+            this.FeatureNameDataGridViewTextBoxColumn,
+            this.FeatureDescriptionDataGridViewTextBoxColumn,
+            this.FeatureFileDataGridViewComboBoxColumn,
+            this.FeatureDurationDataGridViewTextBoxColumn});
+            this.FeatureDataGridView.DataSource = this.FeatureBindingSource;
+            this.FeatureDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FeatureDataGridView.Location = new System.Drawing.Point(3, 17);
+            this.FeatureDataGridView.MultiSelect = false;
+            this.FeatureDataGridView.Name = "FeatureDataGridView";
+            this.FeatureDataGridView.RowHeadersVisible = false;
+            this.FeatureDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.FeatureDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.FeatureDataGridView.ShowEditingIcon = false;
+            this.FeatureDataGridView.Size = new System.Drawing.Size(552, 90);
+            this.FeatureDataGridView.TabIndex = 13;
+            this.FeatureDataGridView.DataSourceChanged += new System.EventHandler(this.FeatureDataGridView_DataSourceChanged);
+            this.FeatureDataGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.FeatureDataGridView_DataBindingComplete);
+            this.FeatureDataGridView.RowLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.FeatureDataGridView_RowLeave);
+            // 
+            // FeatureNumberDataGridViewTextBoxColumn1
+            // 
+            this.FeatureNumberDataGridViewTextBoxColumn1.DataPropertyName = "Number";
+            this.FeatureNumberDataGridViewTextBoxColumn1.HeaderText = "#";
+            this.FeatureNumberDataGridViewTextBoxColumn1.MinimumWidth = 26;
+            this.FeatureNumberDataGridViewTextBoxColumn1.Name = "FeatureNumberDataGridViewTextBoxColumn1";
+            this.FeatureNumberDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.FeatureNumberDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.FeatureNumberDataGridViewTextBoxColumn1.ToolTipText = "Feature number";
+            this.FeatureNumberDataGridViewTextBoxColumn1.Width = 26;
+            // 
+            // FeatureNameDataGridViewTextBoxColumn
+            // 
+            this.FeatureNameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.FeatureNameDataGridViewTextBoxColumn.HeaderText = "名稱";
+            this.FeatureNameDataGridViewTextBoxColumn.MinimumWidth = 125;
+            this.FeatureNameDataGridViewTextBoxColumn.Name = "FeatureNameDataGridViewTextBoxColumn";
+            this.FeatureNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.FeatureNameDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.FeatureNameDataGridViewTextBoxColumn.ToolTipText = "Feature name";
+            this.FeatureNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // FeatureDescriptionDataGridViewTextBoxColumn
+            // 
+            this.FeatureDescriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
+            this.FeatureDescriptionDataGridViewTextBoxColumn.HeaderText = "描述";
+            this.FeatureDescriptionDataGridViewTextBoxColumn.MinimumWidth = 220;
+            this.FeatureDescriptionDataGridViewTextBoxColumn.Name = "FeatureDescriptionDataGridViewTextBoxColumn";
+            this.FeatureDescriptionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.FeatureDescriptionDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.FeatureDescriptionDataGridViewTextBoxColumn.ToolTipText = "Feature description";
+            this.FeatureDescriptionDataGridViewTextBoxColumn.Width = 220;
+            // 
+            // FeatureFileDataGridViewComboBoxColumn
+            // 
+            this.FeatureFileDataGridViewComboBoxColumn.HeaderText = "檔案";
+            this.FeatureFileDataGridViewComboBoxColumn.MinimumWidth = 90;
+            this.FeatureFileDataGridViewComboBoxColumn.Name = "FeatureFileDataGridViewComboBoxColumn";
+            this.FeatureFileDataGridViewComboBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.FeatureFileDataGridViewComboBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.FeatureFileDataGridViewComboBoxColumn.ToolTipText = "Feature File(s)";
+            this.FeatureFileDataGridViewComboBoxColumn.Width = 90;
+            // 
+            // FeatureDurationDataGridViewTextBoxColumn
+            // 
+            this.FeatureDurationDataGridViewTextBoxColumn.DataPropertyName = "Duration";
+            this.FeatureDurationDataGridViewTextBoxColumn.HeaderText = "時間長度";
+            this.FeatureDurationDataGridViewTextBoxColumn.MinimumWidth = 80;
+            this.FeatureDurationDataGridViewTextBoxColumn.Name = "FeatureDurationDataGridViewTextBoxColumn";
+            this.FeatureDurationDataGridViewTextBoxColumn.ReadOnly = true;
+            this.FeatureDurationDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.FeatureDurationDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // FeatureBindingSource
+            // 
+            this.FeatureBindingSource.AllowNew = false;
+            this.FeatureBindingSource.DataSource = typeof(eac3to.Feature);
+            // 
             // StreamGroupBox
             // 
             this.StreamGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
@@ -234,102 +322,6 @@ namespace MeGUI.packages.tools.hdbdextractor
             this.StreamGroupBox.TabIndex = 15;
             this.StreamGroupBox.TabStop = false;
             this.StreamGroupBox.Text = "檔案串流";
-            // 
-            // OutputGroupBox
-            // 
-            this.OutputGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.OutputGroupBox.Controls.Add(this.FolderOutputSourceButton);
-            this.OutputGroupBox.Controls.Add(this.FolderOutputTextBox);
-            this.OutputGroupBox.Location = new System.Drawing.Point(10, 83);
-            this.OutputGroupBox.Name = "OutputGroupBox";
-            this.OutputGroupBox.Size = new System.Drawing.Size(558, 45);
-            this.OutputGroupBox.TabIndex = 16;
-            this.OutputGroupBox.TabStop = false;
-            this.OutputGroupBox.Text = "輸出";
-            // 
-            // FolderOutputSourceButton
-            // 
-            this.FolderOutputSourceButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FolderOutputSourceButton.AutoSize = true;
-            this.FolderOutputSourceButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.FolderOutputSourceButton.Location = new System.Drawing.Point(523, 17);
-            this.FolderOutputSourceButton.Name = "FolderOutputSourceButton";
-            this.FolderOutputSourceButton.Size = new System.Drawing.Size(29, 23);
-            this.FolderOutputSourceButton.TabIndex = 13;
-            this.FolderOutputSourceButton.Text = "...";
-            this.FolderOutputSourceButton.UseVisualStyleBackColor = true;
-            this.FolderOutputSourceButton.Click += new System.EventHandler(this.FolderOutputSourceButton_Click);
-            // 
-            // FolderOutputTextBox
-            // 
-            this.FolderOutputTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.FolderOutputTextBox.Location = new System.Drawing.Point(6, 19);
-            this.FolderOutputTextBox.Name = "FolderOutputTextBox";
-            this.FolderOutputTextBox.Size = new System.Drawing.Size(514, 21);
-            this.FolderOutputTextBox.TabIndex = 1;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.Filter = resources.GetString("openFileDialog1.Filter");
-            this.openFileDialog1.FilterIndex = 5;
-            this.openFileDialog1.Multiselect = true;
-            // 
-            // FeatureButton
-            // 
-            this.FeatureButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.FeatureButton.Location = new System.Drawing.Point(333, 425);
-            this.FeatureButton.Name = "FeatureButton";
-            this.FeatureButton.Size = new System.Drawing.Size(75, 23);
-            this.FeatureButton.TabIndex = 18;
-            this.FeatureButton.Text = "檔案內容";
-            this.FeatureButton.UseVisualStyleBackColor = true;
-            this.FeatureButton.Visible = false;
-            // 
-            // extractTypesBindingSource
-            // 
-            this.extractTypesBindingSource.DataMember = "ExtractTypes";
-            this.extractTypesBindingSource.DataSource = this.StreamsBindingSource;
-            // 
-            // closeOnQueue
-            // 
-            this.closeOnQueue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeOnQueue.Checked = true;
-            this.closeOnQueue.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.closeOnQueue.Location = new System.Drawing.Point(336, 425);
-            this.closeOnQueue.Name = "closeOnQueue";
-            this.closeOnQueue.Size = new System.Drawing.Size(72, 24);
-            this.closeOnQueue.TabIndex = 19;
-            this.closeOnQueue.Text = "並關閉";
-            // 
-            // ToolStripStatusLabel
-            // 
-            this.ToolStripStatusLabel.AutoSize = false;
-            this.ToolStripStatusLabel.Name = "ToolStripStatusLabel";
-            this.ToolStripStatusLabel.Size = new System.Drawing.Size(358, 18);
-            this.ToolStripStatusLabel.Text = "準備";
-            this.ToolStripStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ToolStripStatusLabel.ToolTipText = "狀態";
-            // 
-            // ToolStripProgressBar
-            // 
-            this.ToolStripProgressBar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.ToolStripProgressBar.Name = "ToolStripProgressBar";
-            this.ToolStripProgressBar.Size = new System.Drawing.Size(216, 17);
-            this.ToolStripProgressBar.ToolTipText = "進度";
-            // 
-            // StatusStrip
-            // 
-            this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripStatusLabel,
-            this.ToolStripProgressBar});
-            this.StatusStrip.Location = new System.Drawing.Point(0, 455);
-            this.StatusStrip.Name = "StatusStrip";
-            this.StatusStrip.ShowItemToolTips = true;
-            this.StatusStrip.Size = new System.Drawing.Size(580, 23);
-            this.StatusStrip.SizingGrip = false;
-            this.StatusStrip.TabIndex = 11;
             // 
             // StreamDataGridView
             // 
@@ -456,93 +448,101 @@ namespace MeGUI.packages.tools.hdbdextractor
             // 
             this.StreamsBindingSource.DataSource = typeof(eac3to.Stream);
             // 
-            // FeatureDataGridView
+            // OutputGroupBox
             // 
-            this.FeatureDataGridView.AllowUserToAddRows = false;
-            this.FeatureDataGridView.AllowUserToDeleteRows = false;
-            this.FeatureDataGridView.AllowUserToResizeColumns = false;
-            this.FeatureDataGridView.AllowUserToResizeRows = false;
-            this.FeatureDataGridView.AutoGenerateColumns = false;
-            this.FeatureDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.FeatureDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.FeatureDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.FeatureNumberDataGridViewTextBoxColumn1,
-            this.FeatureNameDataGridViewTextBoxColumn,
-            this.FeatureDescriptionDataGridViewTextBoxColumn,
-            this.FeatureFileDataGridViewComboBoxColumn,
-            this.FeatureDurationDataGridViewTextBoxColumn});
-            this.FeatureDataGridView.DataSource = this.FeatureBindingSource;
-            this.FeatureDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FeatureDataGridView.Location = new System.Drawing.Point(3, 17);
-            this.FeatureDataGridView.MultiSelect = false;
-            this.FeatureDataGridView.Name = "FeatureDataGridView";
-            this.FeatureDataGridView.RowHeadersVisible = false;
-            this.FeatureDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.FeatureDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.FeatureDataGridView.ShowEditingIcon = false;
-            this.FeatureDataGridView.Size = new System.Drawing.Size(552, 90);
-            this.FeatureDataGridView.TabIndex = 13;
-            this.FeatureDataGridView.DataSourceChanged += new System.EventHandler(this.FeatureDataGridView_DataSourceChanged);
-            this.FeatureDataGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.FeatureDataGridView_DataBindingComplete);
-            this.FeatureDataGridView.RowLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.FeatureDataGridView_RowLeave);
+            this.OutputGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.OutputGroupBox.Controls.Add(this.FolderOutputSourceButton);
+            this.OutputGroupBox.Controls.Add(this.FolderOutputTextBox);
+            this.OutputGroupBox.Location = new System.Drawing.Point(10, 83);
+            this.OutputGroupBox.Name = "OutputGroupBox";
+            this.OutputGroupBox.Size = new System.Drawing.Size(558, 45);
+            this.OutputGroupBox.TabIndex = 16;
+            this.OutputGroupBox.TabStop = false;
+            this.OutputGroupBox.Text = "輸出";
             // 
-            // FeatureNumberDataGridViewTextBoxColumn1
+            // FolderOutputSourceButton
             // 
-            this.FeatureNumberDataGridViewTextBoxColumn1.DataPropertyName = "Number";
-            this.FeatureNumberDataGridViewTextBoxColumn1.HeaderText = "#";
-            this.FeatureNumberDataGridViewTextBoxColumn1.MinimumWidth = 26;
-            this.FeatureNumberDataGridViewTextBoxColumn1.Name = "FeatureNumberDataGridViewTextBoxColumn1";
-            this.FeatureNumberDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.FeatureNumberDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.FeatureNumberDataGridViewTextBoxColumn1.ToolTipText = "Feature number";
-            this.FeatureNumberDataGridViewTextBoxColumn1.Width = 26;
+            this.FolderOutputSourceButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.FolderOutputSourceButton.AutoSize = true;
+            this.FolderOutputSourceButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.FolderOutputSourceButton.Location = new System.Drawing.Point(523, 17);
+            this.FolderOutputSourceButton.Name = "FolderOutputSourceButton";
+            this.FolderOutputSourceButton.Size = new System.Drawing.Size(29, 23);
+            this.FolderOutputSourceButton.TabIndex = 13;
+            this.FolderOutputSourceButton.Text = "...";
+            this.FolderOutputSourceButton.UseVisualStyleBackColor = true;
+            this.FolderOutputSourceButton.Click += new System.EventHandler(this.FolderOutputSourceButton_Click);
             // 
-            // FeatureNameDataGridViewTextBoxColumn
+            // FolderOutputTextBox
             // 
-            this.FeatureNameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.FeatureNameDataGridViewTextBoxColumn.HeaderText = "名稱";
-            this.FeatureNameDataGridViewTextBoxColumn.MinimumWidth = 125;
-            this.FeatureNameDataGridViewTextBoxColumn.Name = "FeatureNameDataGridViewTextBoxColumn";
-            this.FeatureNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.FeatureNameDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.FeatureNameDataGridViewTextBoxColumn.ToolTipText = "Feature name";
-            this.FeatureNameDataGridViewTextBoxColumn.Width = 125;
+            this.FolderOutputTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.FolderOutputTextBox.Location = new System.Drawing.Point(6, 19);
+            this.FolderOutputTextBox.Name = "FolderOutputTextBox";
+            this.FolderOutputTextBox.Size = new System.Drawing.Size(514, 21);
+            this.FolderOutputTextBox.TabIndex = 1;
             // 
-            // FeatureDescriptionDataGridViewTextBoxColumn
+            // openFileDialog1
             // 
-            this.FeatureDescriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.FeatureDescriptionDataGridViewTextBoxColumn.HeaderText = "描述";
-            this.FeatureDescriptionDataGridViewTextBoxColumn.MinimumWidth = 220;
-            this.FeatureDescriptionDataGridViewTextBoxColumn.Name = "FeatureDescriptionDataGridViewTextBoxColumn";
-            this.FeatureDescriptionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.FeatureDescriptionDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.FeatureDescriptionDataGridViewTextBoxColumn.ToolTipText = "Feature description";
-            this.FeatureDescriptionDataGridViewTextBoxColumn.Width = 220;
+            this.openFileDialog1.Filter = resources.GetString("openFileDialog1.Filter");
+            this.openFileDialog1.FilterIndex = 5;
+            this.openFileDialog1.Multiselect = true;
             // 
-            // FeatureFileDataGridViewComboBoxColumn
+            // FeatureButton
             // 
-            this.FeatureFileDataGridViewComboBoxColumn.HeaderText = "檔案";
-            this.FeatureFileDataGridViewComboBoxColumn.MinimumWidth = 90;
-            this.FeatureFileDataGridViewComboBoxColumn.Name = "FeatureFileDataGridViewComboBoxColumn";
-            this.FeatureFileDataGridViewComboBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.FeatureFileDataGridViewComboBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.FeatureFileDataGridViewComboBoxColumn.ToolTipText = "Feature File(s)";
-            this.FeatureFileDataGridViewComboBoxColumn.Width = 90;
+            this.FeatureButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.FeatureButton.Location = new System.Drawing.Point(333, 425);
+            this.FeatureButton.Name = "FeatureButton";
+            this.FeatureButton.Size = new System.Drawing.Size(75, 23);
+            this.FeatureButton.TabIndex = 18;
+            this.FeatureButton.Text = "檔案內容";
+            this.FeatureButton.UseVisualStyleBackColor = true;
+            this.FeatureButton.Visible = false;
             // 
-            // FeatureDurationDataGridViewTextBoxColumn
+            // extractTypesBindingSource
             // 
-            this.FeatureDurationDataGridViewTextBoxColumn.DataPropertyName = "Duration";
-            this.FeatureDurationDataGridViewTextBoxColumn.HeaderText = "時間長度";
-            this.FeatureDurationDataGridViewTextBoxColumn.MinimumWidth = 80;
-            this.FeatureDurationDataGridViewTextBoxColumn.Name = "FeatureDurationDataGridViewTextBoxColumn";
-            this.FeatureDurationDataGridViewTextBoxColumn.ReadOnly = true;
-            this.FeatureDurationDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.FeatureDurationDataGridViewTextBoxColumn.Width = 80;
+            this.extractTypesBindingSource.DataMember = "ExtractTypes";
+            this.extractTypesBindingSource.DataSource = this.StreamsBindingSource;
             // 
-            // FeatureBindingSource
+            // closeOnQueue
             // 
-            this.FeatureBindingSource.AllowNew = false;
-            this.FeatureBindingSource.DataSource = typeof(eac3to.Feature);
+            this.closeOnQueue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeOnQueue.Checked = true;
+            this.closeOnQueue.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.closeOnQueue.Location = new System.Drawing.Point(336, 425);
+            this.closeOnQueue.Name = "closeOnQueue";
+            this.closeOnQueue.Size = new System.Drawing.Size(72, 24);
+            this.closeOnQueue.TabIndex = 19;
+            this.closeOnQueue.Text = "並關閉";
+            // 
+            // ToolStripStatusLabel
+            // 
+            this.ToolStripStatusLabel.AutoSize = false;
+            this.ToolStripStatusLabel.Name = "ToolStripStatusLabel";
+            this.ToolStripStatusLabel.Size = new System.Drawing.Size(358, 18);
+            this.ToolStripStatusLabel.Text = "準備";
+            this.ToolStripStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ToolStripStatusLabel.ToolTipText = "狀態";
+            // 
+            // ToolStripProgressBar
+            // 
+            this.ToolStripProgressBar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.ToolStripProgressBar.Name = "ToolStripProgressBar";
+            this.ToolStripProgressBar.Size = new System.Drawing.Size(216, 17);
+            this.ToolStripProgressBar.ToolTipText = "進度";
+            // 
+            // StatusStrip
+            // 
+            this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripStatusLabel,
+            this.ToolStripProgressBar});
+            this.StatusStrip.Location = new System.Drawing.Point(0, 455);
+            this.StatusStrip.Name = "StatusStrip";
+            this.StatusStrip.ShowItemToolTips = true;
+            this.StatusStrip.Size = new System.Drawing.Size(580, 23);
+            this.StatusStrip.SizingGrip = false;
+            this.StatusStrip.TabIndex = 11;
             // 
             // HdBdStreamExtractor
             // 
@@ -566,22 +566,22 @@ namespace MeGUI.packages.tools.hdbdextractor
             this.MaximizeBox = false;
             this.Name = "HdBdStreamExtractor";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MeGUI - HD-DVD/Blu-ray 檔案提取";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HdBrStreamExtractor_FormClosing);
             this.InputGroupBox.ResumeLayout(false);
             this.InputGroupBox.PerformLayout();
             this.FeatureGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.FeatureDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FeatureBindingSource)).EndInit();
             this.StreamGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.StreamDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StreamsBindingSource)).EndInit();
             this.OutputGroupBox.ResumeLayout(false);
             this.OutputGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.extractTypesBindingSource)).EndInit();
             this.StatusStrip.ResumeLayout(false);
             this.StatusStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StreamDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StreamsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FeatureDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FeatureBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -869,7 +869,7 @@ namespace MeGUI
             this.helpButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.helpButton1.Location = new System.Drawing.Point(12, 519);
             this.helpButton1.Name = "helpButton1";
-            this.helpButton1.Size = new System.Drawing.Size(38, 23);
+            this.helpButton1.Size = new System.Drawing.Size(56, 23);
             this.helpButton1.TabIndex = 32;
             // 
             // OneClickWindow
@@ -886,7 +886,7 @@ namespace MeGUI
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "OneClickWindow";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MeGUI - 一鍵化編碼";
             this.Shown += new System.EventHandler(this.OneClickWindow_Shown);
             this.tabPage1.ResumeLayout(false);

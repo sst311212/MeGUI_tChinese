@@ -416,7 +416,7 @@ namespace MeGUI
             this.helpButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.helpButton1.Location = new System.Drawing.Point(12, 519);
             this.helpButton1.Name = "helpButton1";
-            this.helpButton1.Size = new System.Drawing.Size(38, 23);
+            this.helpButton1.Size = new System.Drawing.Size(56, 23);
             this.helpButton1.TabIndex = 42;
             // 
             // ChapterCreator
@@ -435,7 +435,7 @@ namespace MeGUI
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ChapterCreator";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MeGUI - 章節產生";
             this.Load += new System.EventHandler(this.ChapterCreator_Load);
             this.chaptersGroupbox.ResumeLayout(false);

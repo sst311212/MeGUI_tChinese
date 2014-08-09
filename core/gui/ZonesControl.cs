@@ -65,14 +65,14 @@ namespace MeGUI
         {
             if (zoneMode.SelectedIndex == 0) // quantizer
             {
-                this.modifierLabel.Text = "Quantizer";
+                this.modifierLabel.Text = "質量";
                 this.zoneModifier.Minimum = 0;
                 this.zoneModifier.Maximum = 51;
                 this.zoneModifier.Value = 26;
             }
             if (zoneMode.SelectedIndex == 1)
             {
-                this.modifierLabel.Text = "Bitrate %";
+                this.modifierLabel.Text = "位元率 %";
                 this.zoneModifier.Minimum = 1;
                 this.zoneModifier.Maximum = 500;
                 this.zoneModifier.Value = 100;

@@ -31,6 +31,7 @@
             System.Windows.Forms.GroupBox groupBox1;
             MeGUI.core.gui.HelpButton helpButton1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JobWorker));
+            this.jobQueue1 = new MeGUI.core.gui.JobQueue();
             this.panel1 = new System.Windows.Forms.Panel();
             this.progressLabel = new System.Windows.Forms.Label();
             this.jobProgress = new System.Windows.Forms.ProgressBar();
@@ -43,7 +44,6 @@
             this.shutDownWorkerNowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.progressWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showProgressWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jobQueue1 = new MeGUI.core.gui.JobQueue();
             groupBox1 = new System.Windows.Forms.GroupBox();
             helpButton1 = new MeGUI.core.gui.HelpButton();
             groupBox1.SuspendLayout();
@@ -63,6 +63,20 @@
             groupBox1.TabIndex = 33;
             groupBox1.TabStop = false;
             groupBox1.Text = "工作區佇列";
+            // 
+            // jobQueue1
+            // 
+            this.jobQueue1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.jobQueue1.Location = new System.Drawing.Point(3, 17);
+            this.jobQueue1.Name = "jobQueue1";
+            this.jobQueue1.Padding = new System.Windows.Forms.Padding(2);
+            this.jobQueue1.PauseResumeMode = MeGUI.core.gui.PauseResumeMode.Disabled;
+            this.jobQueue1.Size = new System.Drawing.Size(629, 153);
+            this.jobQueue1.StartStopMode = MeGUI.core.gui.StartStopMode.Start;
+            this.jobQueue1.TabIndex = 0;
+            this.jobQueue1.AbortClicked += new System.EventHandler(this.jobQueue1_AbortClicked);
+            this.jobQueue1.StartClicked += new System.EventHandler(this.jobQueue1_StartClicked);
+            this.jobQueue1.StopClicked += new System.EventHandler(this.jobQueue1_StopClicked);
             // 
             // panel1
             // 
@@ -97,6 +111,16 @@
             this.jobProgress.Name = "jobProgress";
             this.jobProgress.Size = new System.Drawing.Size(571, 23);
             this.jobProgress.TabIndex = 30;
+            // 
+            // helpButton1
+            // 
+            helpButton1.ArticleName = "Parallel job execution";
+            helpButton1.AutoSize = true;
+            helpButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            helpButton1.Location = new System.Drawing.Point(3, 3);
+            helpButton1.Name = "helpButton1";
+            helpButton1.Size = new System.Drawing.Size(56, 23);
+            helpButton1.TabIndex = 36;
             // 
             // flowLayoutPanel2
             // 
@@ -171,33 +195,9 @@
             // showProgressWindowToolStripMenuItem
             // 
             this.showProgressWindowToolStripMenuItem.Name = "showProgressWindowToolStripMenuItem";
-            this.showProgressWindowToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.showProgressWindowToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.showProgressWindowToolStripMenuItem.Text = "顯示處理視窗";
             this.showProgressWindowToolStripMenuItem.Click += new System.EventHandler(this.showProgressWindowToolStripMenuItem_Click);
-            // 
-            // jobQueue1
-            // 
-            this.jobQueue1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.jobQueue1.Location = new System.Drawing.Point(3, 17);
-            this.jobQueue1.Name = "jobQueue1";
-            this.jobQueue1.Padding = new System.Windows.Forms.Padding(2);
-            this.jobQueue1.PauseResumeMode = MeGUI.core.gui.PauseResumeMode.Disabled;
-            this.jobQueue1.Size = new System.Drawing.Size(629, 153);
-            this.jobQueue1.StartStopMode = MeGUI.core.gui.StartStopMode.Start;
-            this.jobQueue1.TabIndex = 0;
-            this.jobQueue1.AbortClicked += new System.EventHandler(this.jobQueue1_AbortClicked);
-            this.jobQueue1.StartClicked += new System.EventHandler(this.jobQueue1_StartClicked);
-            this.jobQueue1.StopClicked += new System.EventHandler(this.jobQueue1_StopClicked);
-            // 
-            // helpButton1
-            // 
-            helpButton1.ArticleName = "Parallel job execution";
-            helpButton1.AutoSize = true;
-            helpButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            helpButton1.Location = new System.Drawing.Point(3, 3);
-            helpButton1.Name = "helpButton1";
-            helpButton1.Size = new System.Drawing.Size(56, 23);
-            helpButton1.TabIndex = 36;
             // 
             // JobWorker
             // 
@@ -211,6 +211,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "JobWorker";
             this.Padding = new System.Windows.Forms.Padding(4);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "工作區任務視窗";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.JobWorker_FormClosed);
             groupBox1.ResumeLayout(false);

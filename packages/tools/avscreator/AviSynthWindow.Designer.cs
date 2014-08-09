@@ -1202,7 +1202,7 @@ namespace MeGUI
             this.helpButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.helpButton1.Location = new System.Drawing.Point(15, 472);
             this.helpButton1.Name = "helpButton1";
-            this.helpButton1.Size = new System.Drawing.Size(38, 23);
+            this.helpButton1.Size = new System.Drawing.Size(56, 23);
             this.helpButton1.TabIndex = 17;
             // 
             // AviSynthWindow
@@ -1220,7 +1220,7 @@ namespace MeGUI
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "AviSynthWindow";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MeGUI - AviSynth 腳本產生";
             this.Shown += new System.EventHandler(this.AviSynthWindow_Shown);
             this.resNCropGroupbox.ResumeLayout(false);

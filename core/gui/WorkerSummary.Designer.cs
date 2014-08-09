@@ -90,13 +90,13 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newWorkerToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(138, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(148, 26);
             // 
             // newWorkerToolStripMenuItem
             // 
             this.newWorkerToolStripMenuItem.Name = "newWorkerToolStripMenuItem";
-            this.newWorkerToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.newWorkerToolStripMenuItem.Text = "New worker";
+            this.newWorkerToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.newWorkerToolStripMenuItem.Text = "新工作區";
             this.newWorkerToolStripMenuItem.Click += new System.EventHandler(this.newWorkerToolStripMenuItem_Click);
             // 
             // WorkerSummary
@@ -111,7 +111,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WorkerSummary";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "WorkerSummary";
+            this.Text = "工作區大綱";
             this.VisibleChanged += new System.EventHandler(this.WorkerSummary_VisibleChanged);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

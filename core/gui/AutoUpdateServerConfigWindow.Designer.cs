@@ -67,7 +67,7 @@
             // 
             this.addServerButton.AutoSize = true;
             this.addServerButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.addServerButton.Location = new System.Drawing.Point(114, 3);
+            this.addServerButton.Location = new System.Drawing.Point(96, 3);
             this.addServerButton.Name = "addServerButton";
             this.addServerButton.Size = new System.Drawing.Size(53, 23);
             this.addServerButton.TabIndex = 0;
@@ -79,7 +79,7 @@
             // 
             this.removeSelectedServersButton.AutoSize = true;
             this.removeSelectedServersButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.removeSelectedServersButton.Location = new System.Drawing.Point(173, 3);
+            this.removeSelectedServersButton.Location = new System.Drawing.Point(155, 3);
             this.removeSelectedServersButton.Name = "removeSelectedServersButton";
             this.removeSelectedServersButton.Size = new System.Drawing.Size(65, 23);
             this.removeSelectedServersButton.TabIndex = 1;
@@ -132,9 +132,9 @@
             this.helpButton1.ArticleName = "AutoUpdate";
             this.helpButton1.AutoSize = true;
             this.helpButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.helpButton1.Location = new System.Drawing.Point(244, 3);
+            this.helpButton1.Location = new System.Drawing.Point(226, 3);
             this.helpButton1.Name = "helpButton1";
-            this.helpButton1.Size = new System.Drawing.Size(38, 23);
+            this.helpButton1.Size = new System.Drawing.Size(56, 23);
             this.helpButton1.TabIndex = 2;
             // 
             // flowLayoutPanel3
@@ -181,6 +181,7 @@
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AutoUpdateServerConfigWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "更新伺服器設定";
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();

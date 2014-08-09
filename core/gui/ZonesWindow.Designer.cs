@@ -69,7 +69,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Cancel";
+            this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -79,7 +79,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "OK";
+            this.button1.Text = "確定";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // ZonesWindow
@@ -92,7 +92,8 @@
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ZonesWindow";
-            this.Text = "ZonesWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "區域視窗";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

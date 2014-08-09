@@ -167,6 +167,7 @@ namespace MeGUI.core.gui
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ProfileConfigurationWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ProfileConfigurationWindow_FormClosing);
             this.presetsGroupbox.ResumeLayout(false);
             this.ResumeLayout(false);

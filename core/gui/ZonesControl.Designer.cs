@@ -30,10 +30,10 @@
         {
             this.zonesGroupbox = new System.Windows.Forms.GroupBox();
             this.zoneListView = new System.Windows.Forms.ListView();
-            this.startFrameColumn = new System.Windows.Forms.ColumnHeader();
-            this.endFrameColumn = new System.Windows.Forms.ColumnHeader();
-            this.modeColumn = new System.Windows.Forms.ColumnHeader();
-            this.modifierColumn = new System.Windows.Forms.ColumnHeader();
+            this.startFrameColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.endFrameColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.modeColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.modifierColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.startFrame = new System.Windows.Forms.TextBox();
             this.endFrame = new System.Windows.Forms.TextBox();
@@ -63,10 +63,10 @@
             this.zonesGroupbox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.zonesGroupbox.Location = new System.Drawing.Point(0, 0);
             this.zonesGroupbox.Name = "zonesGroupbox";
-            this.zonesGroupbox.Size = new System.Drawing.Size(295, 412);
+            this.zonesGroupbox.Size = new System.Drawing.Size(295, 380);
             this.zonesGroupbox.TabIndex = 2;
             this.zonesGroupbox.TabStop = false;
-            this.zonesGroupbox.Text = "Zones";
+            this.zonesGroupbox.Text = "區域";
             // 
             // zoneListView
             // 
@@ -78,29 +78,29 @@
             this.zoneListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.zoneListView.FullRowSelect = true;
             this.zoneListView.HideSelection = false;
-            this.zoneListView.Location = new System.Drawing.Point(3, 16);
+            this.zoneListView.Location = new System.Drawing.Point(3, 18);
             this.zoneListView.Name = "zoneListView";
-            this.zoneListView.Size = new System.Drawing.Size(289, 311);
+            this.zoneListView.Size = new System.Drawing.Size(289, 275);
             this.zoneListView.TabIndex = 0;
             this.zoneListView.UseCompatibleStateImageBehavior = false;
             this.zoneListView.View = System.Windows.Forms.View.Details;
             // 
             // startFrameColumn
             // 
-            this.startFrameColumn.Text = "Start";
+            this.startFrameColumn.Text = "開始";
             // 
             // endFrameColumn
             // 
-            this.endFrameColumn.Text = "End";
+            this.endFrameColumn.Text = "結束";
             // 
             // modeColumn
             // 
-            this.modeColumn.Text = "Mode";
+            this.modeColumn.Text = "模式";
             this.modeColumn.Width = 80;
             // 
             // modifierColumn
             // 
-            this.modifierColumn.Text = "Modifier";
+            this.modifierColumn.Text = "修改";
             // 
             // tableLayoutPanel1
             // 
@@ -120,46 +120,46 @@
             this.tableLayoutPanel1.Controls.Add(this.startFrameLabel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.modifierLabel, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 327);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 293);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(289, 53);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(289, 56);
             this.tableLayoutPanel1.TabIndex = 10;
             // 
             // startFrame
             // 
             this.startFrame.Location = new System.Drawing.Point(73, 3);
             this.startFrame.Name = "startFrame";
-            this.startFrame.Size = new System.Drawing.Size(48, 20);
+            this.startFrame.Size = new System.Drawing.Size(48, 22);
             this.startFrame.TabIndex = 1;
             // 
             // endFrame
             // 
-            this.endFrame.Location = new System.Drawing.Point(73, 29);
+            this.endFrame.Location = new System.Drawing.Point(73, 31);
             this.endFrame.Name = "endFrame";
-            this.endFrame.Size = new System.Drawing.Size(48, 20);
+            this.endFrame.Size = new System.Drawing.Size(48, 22);
             this.endFrame.TabIndex = 2;
             // 
             // endFrameLabel
             // 
             this.endFrameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.endFrameLabel.Location = new System.Drawing.Point(3, 26);
+            this.endFrameLabel.Location = new System.Drawing.Point(3, 28);
             this.endFrameLabel.Name = "endFrameLabel";
-            this.endFrameLabel.Size = new System.Drawing.Size(64, 27);
+            this.endFrameLabel.Size = new System.Drawing.Size(64, 28);
             this.endFrameLabel.TabIndex = 2;
-            this.endFrameLabel.Text = "End Frame";
+            this.endFrameLabel.Text = "結束影格";
             this.endFrameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // zoneLabel
             // 
             this.zoneLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.zoneLabel.Location = new System.Drawing.Point(127, 26);
+            this.zoneLabel.Location = new System.Drawing.Point(127, 28);
             this.zoneLabel.Name = "zoneLabel";
-            this.zoneLabel.Size = new System.Drawing.Size(56, 27);
+            this.zoneLabel.Size = new System.Drawing.Size(56, 28);
             this.zoneLabel.TabIndex = 5;
-            this.zoneLabel.Text = "Mode";
+            this.zoneLabel.Text = "模式";
             this.zoneLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // zoneModifier
@@ -172,7 +172,7 @@
             0,
             0});
             this.zoneModifier.Name = "zoneModifier";
-            this.zoneModifier.Size = new System.Drawing.Size(97, 20);
+            this.zoneModifier.Size = new System.Drawing.Size(97, 22);
             this.zoneModifier.TabIndex = 3;
             this.zoneModifier.Value = new decimal(new int[] {
             26,
@@ -187,9 +187,9 @@
             this.zoneMode.Items.AddRange(new object[] {
             "Quantizer",
             "Weight"});
-            this.zoneMode.Location = new System.Drawing.Point(189, 29);
+            this.zoneMode.Location = new System.Drawing.Point(189, 31);
             this.zoneMode.Name = "zoneMode";
-            this.zoneMode.Size = new System.Drawing.Size(97, 21);
+            this.zoneMode.Size = new System.Drawing.Size(97, 20);
             this.zoneMode.TabIndex = 4;
             this.zoneMode.SelectedIndexChanged += new System.EventHandler(this.zoneMode_SelectedIndexChanged);
             // 
@@ -198,9 +198,9 @@
             this.startFrameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.startFrameLabel.Location = new System.Drawing.Point(3, 0);
             this.startFrameLabel.Name = "startFrameLabel";
-            this.startFrameLabel.Size = new System.Drawing.Size(64, 26);
+            this.startFrameLabel.Size = new System.Drawing.Size(64, 28);
             this.startFrameLabel.TabIndex = 1;
-            this.startFrameLabel.Text = "Start Frame";
+            this.startFrameLabel.Text = "開始影格";
             this.startFrameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // modifierLabel
@@ -208,9 +208,9 @@
             this.modifierLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.modifierLabel.Location = new System.Drawing.Point(127, 0);
             this.modifierLabel.Name = "modifierLabel";
-            this.modifierLabel.Size = new System.Drawing.Size(56, 26);
+            this.modifierLabel.Size = new System.Drawing.Size(56, 28);
             this.modifierLabel.TabIndex = 6;
-            this.modifierLabel.Text = "Quantizer";
+            this.modifierLabel.Text = "質量";
             this.modifierLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel1
@@ -223,9 +223,9 @@
             this.flowLayoutPanel1.Controls.Add(this.clearZonesButton);
             this.flowLayoutPanel1.Controls.Add(this.addZoneButton);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 380);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 349);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(289, 29);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(289, 28);
             this.flowLayoutPanel1.TabIndex = 11;
             // 
             // showVideoButton
@@ -235,62 +235,62 @@
             this.showVideoButton.Enabled = false;
             this.showVideoButton.Location = new System.Drawing.Point(3, 3);
             this.showVideoButton.Name = "showVideoButton";
-            this.showVideoButton.Size = new System.Drawing.Size(55, 23);
+            this.showVideoButton.Size = new System.Drawing.Size(39, 22);
             this.showVideoButton.TabIndex = 9;
-            this.showVideoButton.Text = "Preview";
+            this.showVideoButton.Text = "預覽";
             this.showVideoButton.Click += new System.EventHandler(this.showVideoButton_Click);
             // 
             // removeZoneButton
             // 
             this.removeZoneButton.AutoSize = true;
             this.removeZoneButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.removeZoneButton.Location = new System.Drawing.Point(64, 3);
+            this.removeZoneButton.Location = new System.Drawing.Point(48, 3);
             this.removeZoneButton.Name = "removeZoneButton";
-            this.removeZoneButton.Size = new System.Drawing.Size(57, 23);
+            this.removeZoneButton.Size = new System.Drawing.Size(39, 22);
             this.removeZoneButton.TabIndex = 6;
-            this.removeZoneButton.Text = "Remove";
+            this.removeZoneButton.Text = "移除";
             this.removeZoneButton.Click += new System.EventHandler(this.removeZoneButton_Click);
             // 
             // updateZoneButton
             // 
             this.updateZoneButton.AutoSize = true;
             this.updateZoneButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.updateZoneButton.Location = new System.Drawing.Point(127, 3);
+            this.updateZoneButton.Location = new System.Drawing.Point(93, 3);
             this.updateZoneButton.Name = "updateZoneButton";
-            this.updateZoneButton.Size = new System.Drawing.Size(52, 23);
+            this.updateZoneButton.Size = new System.Drawing.Size(39, 22);
             this.updateZoneButton.TabIndex = 9;
-            this.updateZoneButton.Text = "Update";
+            this.updateZoneButton.Text = "更新";
             this.updateZoneButton.Click += new System.EventHandler(this.updateZoneButton_Click);
             // 
             // clearZonesButton
             // 
             this.clearZonesButton.AutoSize = true;
             this.clearZonesButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.clearZonesButton.Location = new System.Drawing.Point(185, 3);
+            this.clearZonesButton.Location = new System.Drawing.Point(138, 3);
             this.clearZonesButton.Name = "clearZonesButton";
-            this.clearZonesButton.Size = new System.Drawing.Size(41, 23);
+            this.clearZonesButton.Size = new System.Drawing.Size(39, 22);
             this.clearZonesButton.TabIndex = 5;
-            this.clearZonesButton.Text = "Clear";
+            this.clearZonesButton.Text = "清除";
             this.clearZonesButton.Click += new System.EventHandler(this.clearZonesButton_Click);
             // 
             // addZoneButton
             // 
             this.addZoneButton.AutoSize = true;
             this.addZoneButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.addZoneButton.Location = new System.Drawing.Point(232, 3);
+            this.addZoneButton.Location = new System.Drawing.Point(183, 3);
             this.addZoneButton.Name = "addZoneButton";
-            this.addZoneButton.Size = new System.Drawing.Size(36, 23);
+            this.addZoneButton.Size = new System.Drawing.Size(39, 22);
             this.addZoneButton.TabIndex = 7;
-            this.addZoneButton.Text = "Add";
+            this.addZoneButton.Text = "加入";
             this.addZoneButton.Click += new System.EventHandler(this.addZoneButton_Click);
             // 
             // ZonesControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.zonesGroupbox);
             this.Name = "ZonesControl";
-            this.Size = new System.Drawing.Size(295, 412);
+            this.Size = new System.Drawing.Size(295, 380);
             this.Load += new System.EventHandler(this.ZonesControl_Load);
             this.zonesGroupbox.ResumeLayout(false);
             this.zonesGroupbox.PerformLayout();

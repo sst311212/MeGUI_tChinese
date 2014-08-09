@@ -41,7 +41,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
-            this.button2.Text = "OK";
+            this.button2.Text = "確定";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // textBox1
@@ -67,7 +67,8 @@
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TextViewer";
-            this.Text = "Text Viewer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "文件瀏覽器";
             this.ResumeLayout(false);
             this.PerformLayout();
 

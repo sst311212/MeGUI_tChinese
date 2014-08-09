@@ -229,7 +229,7 @@ namespace MeGUI
             label1.AutoSize = true;
             label1.Location = new System.Drawing.Point(191, 23);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(49, 13);
+            label1.Size = new System.Drawing.Size(35, 13);
             label1.TabIndex = 27;
             label1.Text = "分割:";
             // 
@@ -471,7 +471,7 @@ namespace MeGUI
             this.helpButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.helpButton1.Location = new System.Drawing.Point(10, 228);
             this.helpButton1.Name = "helpButton1";
-            this.helpButton1.Size = new System.Drawing.Size(38, 23);
+            this.helpButton1.Size = new System.Drawing.Size(56, 23);
             this.helpButton1.TabIndex = 21;
             // 
             // AutoEncodeWindow
@@ -490,7 +490,7 @@ namespace MeGUI
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AutoEncodeWindow";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MeGUI - 自動編碼";
             this.AutomaticEncodingGroup.ResumeLayout(false);
             this.AutomaticEncodingGroup.PerformLayout();

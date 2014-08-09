@@ -800,7 +800,7 @@ namespace MeGUI
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Calculator";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MeGUI - 位元率計算";
             this.videoGroupbox.ResumeLayout(false);
             this.videoGroupbox.PerformLayout();

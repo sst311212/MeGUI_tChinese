@@ -114,6 +114,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FileSizeDialog";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "檔案大小對話框";
             this.Shown += new System.EventHandler(this.FileSizeDialog_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.number)).EndInit();

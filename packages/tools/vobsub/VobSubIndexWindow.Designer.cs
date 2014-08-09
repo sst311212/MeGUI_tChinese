@@ -249,7 +249,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "VobSubIndexWindow";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MeGUI - VobSub 索引";
             this.inputGroupbox.ResumeLayout(false);
             this.inputGroupbox.PerformLayout();

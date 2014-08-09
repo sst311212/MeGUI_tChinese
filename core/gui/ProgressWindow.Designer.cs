@@ -302,6 +302,7 @@
             this.MinimumSize = new System.Drawing.Size(332, 330);
             this.Name = "ProgressWindow";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "狀態";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

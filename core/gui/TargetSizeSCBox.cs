@@ -74,7 +74,7 @@ namespace MeGUI.core.gui
             set { maxSize = value; }
         }
 
-        public TargetSizeSCBox() : base("Remove custom sizes...", "Select custom size...")
+        public TargetSizeSCBox() : base("Remove custom sizes...", "選擇自訂大小...")
         {
             base.Getter = new Getter<object>(getter);
             base.bSaveEveryItem = true;
@@ -177,7 +177,7 @@ namespace MeGUI.core.gui
                 if (base.bSaveEveryItem != value)
                 {
                     base.bSaveEveryItem = value;
-                    base.SetTargetSizeSCBoxType("Remove custom sizes...", "Select custom size...");
+                    base.SetTargetSizeSCBoxType("Remove custom sizes...", "選擇自訂大小...");
                     fillStandard();
                     if (MainForm.Instance != null) // form designer fix
                         CustomSizes = MainForm.Instance.Settings.CustomFileSizes;

@@ -80,7 +80,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CountdownWindow";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "關於電腦關機";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.CountdownWindow_Load);

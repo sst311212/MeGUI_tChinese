@@ -66,7 +66,7 @@
             this.ClientSize = new System.Drawing.Size(444, 562);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MuxWindow";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MeGUI - 合成";
             this.ResumeLayout(false);
             this.PerformLayout();

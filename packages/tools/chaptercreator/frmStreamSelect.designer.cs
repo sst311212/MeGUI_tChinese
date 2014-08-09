@@ -114,7 +114,7 @@
         this.Name = "frmStreamSelect";
         this.ShowInTaskbar = false;
         this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-        this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+        this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
         this.Text = "選擇您的清單";
         this.ResumeLayout(false);
         this.PerformLayout();

@@ -60,19 +60,19 @@
             this.checkAllToolStripMenuItem,
             this.checkNoneToolStripMenuItem});
             this.statusCheck.Name = "statusCheck";
-            this.statusCheck.Size = new System.Drawing.Size(146, 48);
+            this.statusCheck.Size = new System.Drawing.Size(125, 48);
             // 
             // checkAllToolStripMenuItem
             // 
             this.checkAllToolStripMenuItem.Name = "checkAllToolStripMenuItem";
-            this.checkAllToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.checkAllToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.checkAllToolStripMenuItem.Text = "全部選擇";
             this.checkAllToolStripMenuItem.Click += new System.EventHandler(this.checkAllToolStripMenuItem_Click);
             // 
             // checkNoneToolStripMenuItem
             // 
             this.checkNoneToolStripMenuItem.Name = "checkNoneToolStripMenuItem";
-            this.checkNoneToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.checkNoneToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.checkNoneToolStripMenuItem.Text = "全部取消";
             this.checkNoneToolStripMenuItem.Click += new System.EventHandler(this.checkNoneToolStripMenuItem_Click);
             // 
@@ -88,6 +88,7 @@
             this.ClientSize = new System.Drawing.Size(383, 358);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ProfileImporter";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "設定檔匯入";
             this.Shown += new System.EventHandler(this.ProfileImporter_Shown);
             this.Controls.SetChildIndex(this.profileList, 0);

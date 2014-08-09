@@ -267,7 +267,7 @@ namespace MeGUI
             this.helpButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.helpButton1.Location = new System.Drawing.Point(12, 30);
             this.helpButton1.Name = "helpButton1";
-            this.helpButton1.Size = new System.Drawing.Size(38, 23);
+            this.helpButton1.Size = new System.Drawing.Size(56, 23);
             this.helpButton1.TabIndex = 8;
             // 
             // progressBar
@@ -316,7 +316,7 @@ namespace MeGUI
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(400, 200);
             this.Name = "UpdateWindow";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MeGUI - 更新程式";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateWindow_FormClosing);
             this.Load += new System.EventHandler(this.UpdateWindow_Load);

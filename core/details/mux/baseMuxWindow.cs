@@ -306,7 +306,7 @@ namespace MeGUI
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.99329F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.00671F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 42F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel2.Controls.Add(this.videoInputLabel, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.videoName, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.fps, 1, 1);
@@ -336,7 +336,7 @@ namespace MeGUI
             // videoName
             // 
             this.videoName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.videoName.Location = new System.Drawing.Point(241, 42);
+            this.videoName.Location = new System.Drawing.Point(240, 42);
             this.videoName.MaxLength = 100;
             this.videoName.Name = "videoName";
             this.videoName.Size = new System.Drawing.Size(145, 21);
@@ -351,7 +351,7 @@ namespace MeGUI
             this.fps.Name = "fps";
             this.fps.NullString = "尚未設定";
             this.fps.SelectedIndex = 0;
-            this.fps.Size = new System.Drawing.Size(140, 29);
+            this.fps.Size = new System.Drawing.Size(139, 29);
             this.fps.TabIndex = 3;
             this.fps.SelectionChanged += new MeGUI.StringChanged(this.fps_SelectionChanged);
             // 
@@ -359,7 +359,7 @@ namespace MeGUI
             // 
             this.videoNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.videoNameLabel.AutoSize = true;
-            this.videoNameLabel.Location = new System.Drawing.Point(207, 46);
+            this.videoNameLabel.Location = new System.Drawing.Point(206, 46);
             this.videoNameLabel.Margin = new System.Windows.Forms.Padding(0);
             this.videoNameLabel.Name = "videoNameLabel";
             this.videoNameLabel.Size = new System.Drawing.Size(31, 13);
@@ -762,7 +762,7 @@ namespace MeGUI
             this.helpButton1.Location = new System.Drawing.Point(12, 568);
             this.helpButton1.Margin = new System.Windows.Forms.Padding(12, 9, 12, 9);
             this.helpButton1.Name = "helpButton1";
-            this.helpButton1.Size = new System.Drawing.Size(56, 23);
+            this.helpButton1.Size = new System.Drawing.Size(55, 23);
             this.helpButton1.TabIndex = 8;
             // 
             // chkCloseOnQueue
@@ -791,6 +791,7 @@ namespace MeGUI
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "baseMuxWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "合成";
             this.videoGroupbox.ResumeLayout(false);
             this.videoGroupbox.PerformLayout();
